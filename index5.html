@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/nav.css">
+
+    <link rel="stylesheet" href="assets/css/index5.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/hover-min.css">
+    <link rel="stylesheet" href="assets/css/hover.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            /*===== LINK ACTIVE =====*/
+            const linkColor = document.querySelectorAll('.fotlink')
+
+            function colorLink() {
+                if (linkColor) {
+                    linkColor.forEach(l => l.classList.remove('active'))
+                    this.classList.add('active')
+                }
+            }
+            linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+            // Your code to run since DOM is loaded and ready
+        });
+
+    </script>
+
+
+</head>
+
+<body onload="myFunction()">
+
+    <div id="div" data-aos="fade-left">
+    </div>
+
+    <div id="body-pd">
+
+        <!--Header  start-->
+        <header class="Container header index" id="header">
+            <div class="header_toggle">
+                <div class="div">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18.947" height="20" viewBox="0 0 18.947 20">
+                        <g id="icons8_user" transform="translate(-3 -2)">
+                            <circle id="Ellipse_110" data-name="Ellipse 110" cx="5.5" cy="5.5" r="5.5"
+                                transform="translate(7 2)" fill="#392c23" />
+                            <path id="Path_971" data-name="Path 971"
+                                d="M18.789,15H6.158a3.158,3.158,0,1,0,0,6.316H18.789a3.158,3.158,0,1,0,0-6.316Z"
+                                transform="translate(0 0.684)" fill="#392c23" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="div">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <path id="Subtraction_9" data-name="Subtraction 9"
+                            d="M2856,20a1.988,1.988,0,0,1-1.415-.586l-2.795-2.795a9,9,0,1,1,2.828-2.828l1.933,1.932.6.6.258.258A2,2,0,0,1,2856,20Zm-9-17a6,6,0,1,0,6,6A6.007,6.007,0,0,0,2847,3Z"
+                            transform="translate(-2838)" fill="#392c23" />
+                    </svg>
+                </div>
+                <div class="div">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <g id="icons8_geography" transform="translate(-2 -1)">
+                            <path id="Path_973" data-name="Path 973"
+                                d="M12,2A10,10,0,1,0,22,12,10.011,10.011,0,0,0,12,2Zm6.918,6h-2.3a12.822,12.822,0,0,0-1.052-3.154A8.06,8.06,0,0,1,18.918,8ZM20,12a7.952,7.952,0,0,1-.263,2h-2.83c.06-.643.093-1.311.093-2s-.033-1.357-.093-2h2.83A7.952,7.952,0,0,1,20,12Zm-8,8c-.843,0-1.949-1.481-2.555-4h5.11C13.949,18.519,12.843,20,12,20ZM9.108,14a18.572,18.572,0,0,1,0-4h5.784A18.8,18.8,0,0,1,15,12a18.8,18.8,0,0,1-.108,2ZM4,12a7.952,7.952,0,0,1,.263-2h2.83C7.033,10.643,7,11.311,7,12s.033,1.357.093,2H4.263A7.952,7.952,0,0,1,4,12Zm8-8c.843,0,1.949,1.481,2.555,4H9.445C10.051,5.481,11.157,4,12,4Zm-3.56.846A12.822,12.822,0,0,0,7.388,8H5.082A8.056,8.056,0,0,1,8.44,4.846ZM5.082,16h2.3a12.822,12.822,0,0,0,1.052,3.154A8.059,8.059,0,0,1,5.082,16ZM15.56,19.154A12.864,12.864,0,0,0,16.612,16h2.3A8.048,8.048,0,0,1,15.56,19.154Z"
+                                transform="translate(0 -1)" fill="#392c23" />
+                        </g>
+                    </svg>
+
+                </div>
+                <div class="div">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        العربية
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">العربية</a></li>
+                        <li><a class="dropdown-item" href="#">الانجليزية</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="relative">
+                <img class="img1" src="assets/image/Path 959.png">
+                <img class="img2" src="assets/image/unnamed.png">
+            </div>
+
+            <div class="header_div">
+                <div class="d-inline-block">
+                    <p>الإثنين 1 محرم 1443 - 09 أغسطس 2021 | 11:46 صباحا</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <g id="icons8_clock" transform="translate(-2 -2)">
+                            <path id="Path_966" data-name="Path 966"
+                                d="M14.892,13.586,13.88,12.117a1.437,1.437,0,0,1-.287-.681L13.12,8.05A1.05,1.05,0,0,0,12.07,7h0a1.05,1.05,0,0,0-1.05,1.05L10.6,11.734a1.792,1.792,0,0,0,.623,1.57l2.181,1.767a1.049,1.049,0,0,0,1.485,0h0A1.052,1.052,0,0,0,14.892,13.586Z"
+                                transform="translate(-0.121 -0.166)" fill="#392c23" />
+                            <path id="Path_967" data-name="Path 967"
+                                d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,17a7,7,0,1,1,7-7A7,7,0,0,1,12,19Z"
+                                transform="translate(0 0)" fill="#392c23" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="d-inline-block me-3">
+                    <p>+42°C</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                        <path id="icons8_sun"
+                            d="M17.983,3.978A1.05,1.05,0,0,0,16.95,5.043v2.1a1.05,1.05,0,0,0,2.1,0v-2.1a1.05,1.05,0,0,0-1.066-1.064Zm-9.152,3.8a1.049,1.049,0,0,0-.731,1.8l1.485,1.484a1.051,1.051,0,1,0,1.486-1.485L9.586,8.091A1.05,1.05,0,0,0,8.832,7.774Zm18.3,0a1.05,1.05,0,0,0-.722.317L24.929,9.575a1.051,1.051,0,1,0,1.486,1.485L27.9,9.577a1.049,1.049,0,0,0-.764-1.8ZM18,10.29a7.7,7.7,0,1,0,7.7,7.7A7.714,7.714,0,0,0,18,10.29Zm0,2.1a5.6,5.6,0,1,1-5.6,5.6A5.583,5.583,0,0,1,18,12.389ZM5.05,16.936a1.049,1.049,0,1,0,0,2.1h2.1a1.049,1.049,0,1,0,0-2.1Zm23.8,0a1.049,1.049,0,1,0,0,2.1h2.1a1.049,1.049,0,1,0,0-2.1ZM10.307,24.594a1.05,1.05,0,0,0-.722.317L8.1,26.395A1.051,1.051,0,0,0,9.586,27.88L11.071,26.4a1.049,1.049,0,0,0-.764-1.8Zm15.353,0a1.049,1.049,0,0,0-.731,1.8l1.485,1.484A1.051,1.051,0,1,0,27.9,26.395l-1.485-1.484a1.05,1.05,0,0,0-.755-.317Zm-7.677,3.172A1.05,1.05,0,0,0,16.95,28.83v2.1a1.05,1.05,0,0,0,2.1,0v-2.1a1.05,1.05,0,0,0-1.066-1.064Z"
+                            transform="translate(-4 -3.978)" fill="#392c23" />
+                    </svg>
+
+                </div>
+            </div>
+        </header>
+        <!--Header  end-->
+
+        <!--NavBar  start-->
+        <div class="l-navbar " id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <div class="nav_list">
+                        <a href="#" class="nav_link">
+                            <span class="nav_name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21.879" height="21.879"
+                                    viewBox="0 0 21.879 21.879">
+                                    <path id="icons8_goal"
+                                        d="M11.939,1a10.973,10.973,0,1,0,9.3,5.207L20.013,7.43a9.3,9.3,0,1,1-3.57-3.563l1.229-1.223A10.811,10.811,0,0,0,11.939,1Zm9.5.25-10.091,10.1a.81.81,0,0,0-.25.592.84.84,0,0,0,1.486.539L22.636,2.433Zm-9.5,3.116A7.659,7.659,0,1,0,18.75,8.692L17.468,9.98a5.982,5.982,0,1,1-3.57-3.57l1.289-1.282A7.513,7.513,0,0,0,11.939,4.366Zm-.368,3.4a4.117,4.117,0,0,0-2.6,1.2,4.2,4.2,0,1,0,7.126,2.393l-2.367,2.367a2.529,2.529,0,0,1-3.576-3.576l2.367-2.36A4.149,4.149,0,0,0,11.571,7.765Z"
+                                        transform="translate(-1 -1)" fill="#392c23" />
+                                </svg>
+
+                            </span>
+                        </a>
+                        <a href="#" class="nav_link ">
+                            <span class="nav_name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21.879" height="21.879"
+                                    viewBox="0 0 21.879 21.879">
+                                    <path id="icons8_goal"
+                                        d="M11.939,1a10.973,10.973,0,1,0,9.3,5.207L20.013,7.43a9.3,9.3,0,1,1-3.57-3.563l1.229-1.223A10.811,10.811,0,0,0,11.939,1Zm9.5.25-10.091,10.1a.81.81,0,0,0-.25.592.84.84,0,0,0,1.486.539L22.636,2.433Zm-9.5,3.116A7.659,7.659,0,1,0,18.75,8.692L17.468,9.98a5.982,5.982,0,1,1-3.57-3.57l1.289-1.282A7.513,7.513,0,0,0,11.939,4.366Zm-.368,3.4a4.117,4.117,0,0,0-2.6,1.2,4.2,4.2,0,1,0,7.126,2.393l-2.367,2.367a2.529,2.529,0,0,1-3.576-3.576l2.367-2.36A4.149,4.149,0,0,0,11.571,7.765Z"
+                                        transform="translate(-1 -1)" fill="#392c23" />
+                                </svg>
+
+                            </span>
+                        </a>
+                        <a href="#" class="nav_link">
+                            <span class="nav_name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21.879" height="21.879"
+                                    viewBox="0 0 21.879 21.879">
+                                    <path id="icons8_goal"
+                                        d="M11.939,1a10.973,10.973,0,1,0,9.3,5.207L20.013,7.43a9.3,9.3,0,1,1-3.57-3.563l1.229-1.223A10.811,10.811,0,0,0,11.939,1Zm9.5.25-10.091,10.1a.81.81,0,0,0-.25.592.84.84,0,0,0,1.486.539L22.636,2.433Zm-9.5,3.116A7.659,7.659,0,1,0,18.75,8.692L17.468,9.98a5.982,5.982,0,1,1-3.57-3.57l1.289-1.282A7.513,7.513,0,0,0,11.939,4.366Zm-.368,3.4a4.117,4.117,0,0,0-2.6,1.2,4.2,4.2,0,1,0,7.126,2.393l-2.367,2.367a2.529,2.529,0,0,1-3.576-3.576l2.367-2.36A4.149,4.149,0,0,0,11.571,7.765Z"
+                                        transform="translate(-1 -1)" fill="#392c23" />
+                                </svg>
+
+
+                            </span>
+                        </a>
+                        <a href="#" class="nav_link">
+                            <span class="nav_name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21.879" height="21.879"
+                                    viewBox="0 0 21.879 21.879">
+                                    <path id="icons8_goal"
+                                        d="M11.939,1a10.973,10.973,0,1,0,9.3,5.207L20.013,7.43a9.3,9.3,0,1,1-3.57-3.563l1.229-1.223A10.811,10.811,0,0,0,11.939,1Zm9.5.25-10.091,10.1a.81.81,0,0,0-.25.592.84.84,0,0,0,1.486.539L22.636,2.433Zm-9.5,3.116A7.659,7.659,0,1,0,18.75,8.692L17.468,9.98a5.982,5.982,0,1,1-3.57-3.57l1.289-1.282A7.513,7.513,0,0,0,11.939,4.366Zm-.368,3.4a4.117,4.117,0,0,0-2.6,1.2,4.2,4.2,0,1,0,7.126,2.393l-2.367,2.367a2.529,2.529,0,0,1-3.576-3.576l2.367-2.36A4.149,4.149,0,0,0,11.571,7.765Z"
+                                        transform="translate(-1 -1)" fill="#392c23" />
+                                </svg>
+
+                            </span>
+                        </a>
+                        <a href="#" class="nav_link">
+                            <span class="nav_name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21.879" height="21.879"
+                                    viewBox="0 0 21.879 21.879">
+                                    <path id="icons8_goal"
+                                        d="M11.939,1a10.973,10.973,0,1,0,9.3,5.207L20.013,7.43a9.3,9.3,0,1,1-3.57-3.563l1.229-1.223A10.811,10.811,0,0,0,11.939,1Zm9.5.25-10.091,10.1a.81.81,0,0,0-.25.592.84.84,0,0,0,1.486.539L22.636,2.433Zm-9.5,3.116A7.659,7.659,0,1,0,18.75,8.692L17.468,9.98a5.982,5.982,0,1,1-3.57-3.57l1.289-1.282A7.513,7.513,0,0,0,11.939,4.366Zm-.368,3.4a4.117,4.117,0,0,0-2.6,1.2,4.2,4.2,0,1,0,7.126,2.393l-2.367,2.367a2.529,2.529,0,0,1-3.576-3.576l2.367-2.36A4.149,4.149,0,0,0,11.571,7.765Z"
+                                        transform="translate(-1 -1)" fill="#392c23" />
+                                </svg>
+
+                            </span>
+                        </a>
+                        <a href="#" class="nav_link">
+                            <span class="nav_name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21.879" height="21.879"
+                                    viewBox="0 0 21.879 21.879">
+                                    <path id="icons8_goal"
+                                        d="M11.939,1a10.973,10.973,0,1,0,9.3,5.207L20.013,7.43a9.3,9.3,0,1,1-3.57-3.563l1.229-1.223A10.811,10.811,0,0,0,11.939,1Zm9.5.25-10.091,10.1a.81.81,0,0,0-.25.592.84.84,0,0,0,1.486.539L22.636,2.433Zm-9.5,3.116A7.659,7.659,0,1,0,18.75,8.692L17.468,9.98a5.982,5.982,0,1,1-3.57-3.57l1.289-1.282A7.513,7.513,0,0,0,11.939,4.366Zm-.368,3.4a4.117,4.117,0,0,0-2.6,1.2,4.2,4.2,0,1,0,7.126,2.393l-2.367,2.367a2.529,2.529,0,0,1-3.576-3.576l2.367-2.36A4.149,4.149,0,0,0,11.571,7.765Z"
+                                        transform="translate(-1 -1)" fill="#392c23" />
+                                </svg>
+
+                            </span>
+                        </a>
+                        <a href="#" class="nav_link">
+                            <span class="nav_name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21.879" height="21.879"
+                                    viewBox="0 0 21.879 21.879">
+                                    <path id="icons8_goal"
+                                        d="M11.939,1a10.973,10.973,0,1,0,9.3,5.207L20.013,7.43a9.3,9.3,0,1,1-3.57-3.563l1.229-1.223A10.811,10.811,0,0,0,11.939,1Zm9.5.25-10.091,10.1a.81.81,0,0,0-.25.592.84.84,0,0,0,1.486.539L22.636,2.433Zm-9.5,3.116A7.659,7.659,0,1,0,18.75,8.692L17.468,9.98a5.982,5.982,0,1,1-3.57-3.57l1.289-1.282A7.513,7.513,0,0,0,11.939,4.366Zm-.368,3.4a4.117,4.117,0,0,0-2.6,1.2,4.2,4.2,0,1,0,7.126,2.393l-2.367,2.367a2.529,2.529,0,0,1-3.576-3.576l2.367-2.36A4.149,4.149,0,0,0,11.571,7.765Z"
+                                        transform="translate(-1 -1)" fill="#392c23" />
+                                </svg>
+
+                            </span>
+                        </a>
+                        <a href="index5.html" class="nav_link active">
+                            <span class="nav_name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <g id="svgexport-6_47_" data-name="svgexport-6 (47)" transform="translate(-2 -2)">
+                                        <g id="Group_1637" data-name="Group 1637" transform="translate(2 2)">
+                                            <path id="Path_1259" data-name="Path 1259"
+                                                d="M76.717,179.718V158.289a.857.857,0,0,1,.857-.857H87.86a.857.857,0,0,1,.857.857v4.286h7.714a.857.857,0,0,1,.857.857v16.286h.857a.857.857,0,0,1,0,1.714H75.86a.857.857,0,0,1,0-1.714Zm10.286,0V159.146H78.432v20.571h1.712v-4.286a.857.857,0,0,1,.857-.857h3.429a.857.857,0,0,1,.857.857v4.286Zm-5.145-3.429v3.429h1.714v-3.429Zm6.86-12v15.429h6.857V164.289ZM91.286,178H93a.857.857,0,0,0,0-1.714H91.286a.857.857,0,1,0,0,1.714Zm0-3.429H93a.857.857,0,0,0,0-1.714H91.286a.857.857,0,1,0,0,1.714ZM81,172.861h3.429a.857.857,0,1,0,0-1.714H81a.857.857,0,0,0,0,1.714Zm10.286-1.714H93a.857.857,0,1,0,0-1.714H91.286a.857.857,0,1,0,0,1.714ZM81,169.432h3.429a.857.857,0,1,0,0-1.714H81a.857.857,0,0,0,0,1.714Zm10.286-1.714H93A.857.857,0,0,0,93,166H91.286a.857.857,0,1,0,0,1.714ZM81,166h3.429a.857.857,0,1,0,0-1.714H81A.857.857,0,1,0,81,166Zm3.429-5.143a.857.857,0,1,1,0,1.714H80.97l-.027,0-.027,0-.027,0-.027,0-.026,0-.032-.007-.029-.008-.03-.009-.03-.009-.025-.009-.024-.01-.024-.01-.023-.011-.023-.012-.023-.012-.022-.014-.021-.014-.021-.015-.021-.015-.021-.015-.024-.02-.023-.021-.022-.021-.021-.021-.022-.025-.02-.023-.019-.025-.018-.025-.015-.021-.014-.022-.013-.022-.013-.022-.012-.023-.013-.028-.013-.029-.011-.03-.009-.027-.009-.03-.007-.026-.006-.026-.005-.027,0-.027,0-.027,0-.027,0-.027,0-.027v-.057l0-.027,0-.027,0-.015a.858.858,0,0,1,.851-.753Z"
+                                                transform="translate(-75.003 -157.432)" fill="#cf2a45" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--NavBar  end-->
+
+
+
+        <!--links  start-->
+        <div class="fot ">
+            <nav class="fotnav">
+                <div>
+                    <div class="fotdiv">
+                        <a href="index5.html" class="fotlink active">
+
+                            البلدية
+
+                        </a>
+                        <a href="#" class="fotlink ">
+
+                            المدينة
+
+                        </a>
+                        <a href="#" class="fotlink">
+
+                            الخدمات
+
+                        </a>
+                        <a href="#" class="fotlink">
+                            المشاريع
+                        </a>
+                        <a href="#" class="fotlink">
+                            المركز الإعلامي
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+            </nav>
+        </div>
+        <!--links  start-->
+    </div>
+
+    <div class="container-fluid height-100 bg">
+
+        <div>
+            <h3>المراكز</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="assets/image/atrafplace-1092x614.png">
+                    <div class="divabsolute">
+                        <img src="assets/image/الاطراف الصناعية.png">
+                    </div>
+
+                    <div class="card-body mt-5">
+                        <h5>مركز الأطراف الصناعية</h5>
+                        <p class="card-text">
+                            برزت مشكلة المعاقين حركيا في سنة 1975، وفي وسط هموم قطاع غزة، الكبيرة والكثيرة، وكذلك
+                            الاعاقات الناتجة عن الحروب
+                            ...والتوتر الأمني، أو نتيجة أمراض السكر وحوادث الطرق، فقامت
+                        </p>
+                        <div class=" align-items-center">
+
+                            <small class="text-muted">عرض التفاصيل</small>
+                            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                    viewBox="0 0 14 8.996">
+                                    <path id="Path_382" data-name="Path 382"
+                                        d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                        transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="assets/image/0mlr1.png">
+                    <div class="divabsolute">
+                        <img src="assets/image/Group 62517.png">
+                    </div>
+
+                    <div class="card-body mt-5">
+                        <h5>ملعب اليرموك غزة</h5>
+                        <p class="card-text">
+                            ،يعتبر ملعب اليرموك أحد أكبر الملاعب على مستوى قطاع غزة
+                            حيث تتخذه عدد من الفرق المحلية كملعب رئيسي لخوض مبارياتها
+                            ...في الدوري المحلي. إلى جانب دوره الرياضي، يستغل الغزيون
+                        </p>
+                        <div class=" align-items-center">
+
+                            <small class="text-muted">عرض التفاصيل</small>
+                            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                    viewBox="0 0 14 8.996">
+                                    <path id="Path_382" data-name="Path 382"
+                                        d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                        transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="assets/image/es3adimg1.png">
+                    <div class="divabsolute">
+                        <img src="assets/image/Group 6.png">
+                    </div>
+
+                    <div class="card-body mt-5">
+                        <h5>مركز حديقة إسعاد الطفولة</h5>
+                        <p class="card-text">
+                            إن مركز حديقة إسعاد الطفولة هو ثمرة لسلسلة من الجهود
+                            والاجتماعات واللقاءات وورشات العمل بين بلدية غزة ومؤسسة
+                            ...التعاون والعديد من المؤسسات الاجتماعية ذات الاهتمام
+                        </p>
+                        <div class=" align-items-center">
+
+                            <small class="text-muted">عرض التفاصيل</small>
+                            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                    viewBox="0 0 14 8.996">
+                                    <path id="Path_382" data-name="Path 382"
+                                        d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                        transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="assets/image/99D6zZ84uyz2TYKyWApn9Gd94RbnRtbBRyvHoINe.png">
+                    <div class="divabsolute">
+                        <img src="assets/image/Group 625.png">
+                    </div>
+
+                    <div class="card-body mt-5">
+                        <h5>مكتبة بلدية غزة العامة</h5>
+                        <p class="card-text">
+                            تهدف المكتبة العامة الى المساعدة على الاستمرار في عملية
+                            التثقيف والتعليم الذاتي للمستفيدين دون حواجز، وتوفير مصادر
+                            ...المعلومات التي تلبي احتياجات المستفيدين واهتماماتهم
+                        </p>
+                        <div class=" align-items-center">
+
+                            <small class="text-muted">عرض التفاصيل</small>
+                            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                    viewBox="0 0 14 8.996">
+                                    <path id="Path_382" data-name="Path 382"
+                                        d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                        transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="assets/image/fonoonTopHead.png">
+                    <div class="divabsolute">
+                        <img src="assets/image/Group 6251.png">
+                    </div>
+
+                    <div class="card-body mt-5">
+                        <h5>قرية الفنون والحرف </h5>
+                        <p class="card-text">
+                            تم تأسيس القرية عام 1998م، حيث تم تنفيذها بتمويل من برنامج
+                            ، وقام بالتنفيذ والإشراف المجلس (UNDP)الأمم المتحدة الإنمائي
+                            ...الاقتصادي الفلسطيني للتنمية والإعمار "بكـدار"، ضمن برنامج
+                        </p>
+                        <div class=" align-items-center">
+
+                            <small class="text-muted">عرض التفاصيل</small>
+                            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                    viewBox="0 0 14 8.996">
+                                    <path id="Path_382" data-name="Path 382"
+                                        d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                        transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="assets/image/rashadBG1.png">
+                    <div class="divabsolute">
+                        <img src="assets/image/Group 625173.png">
+                    </div>
+
+                    <div class="card-body mt-5">
+                        <h5>مركز رشاد الشوا الثقافي</h5>
+                        <p class="card-text">
+                            يعتبر مركز رشاد الشوا الثقافي في مدينة غزه أول مركز ثقافي يبني
+                            في فلسطين, و قد تم إتمام الـعمل في المبني عام 1988م, هذا
+                            ...وبعد مرور عشرة سـنوات مـنذ البدء في البــناء وذلـك نتيجة
+                        </p>
+                        <div class=" align-items-center">
+
+                            <small class="text-muted">عرض التفاصيل</small>
+                            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                    viewBox="0 0 14 8.996">
+                                    <path id="Path_382" data-name="Path 382"
+                                        d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                        transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="assets/image/holest1.png">
+                    <div class="divabsolute">
+                        <img src="assets/image/Group 62.png">
+                    </div>
+
+                    <div class="card-body mt-5">
+                        <h5>مركز هولست الثقافي</h5>
+                        <p class="card-text">
+                            يعمل مركز هولست الثقافي على رفع المستوى الثقافي والتعليمي
+                            والاجتماعي والصحي لأفراد المجتمع من أجل تحقيق التنمية في
+                            ...مختلف المجالات ، واستثمار الطاقات المتاحة ، وفي مقدمتها
+                        </p>
+                        <div class=" align-items-center">
+
+                            <small class="text-muted">عرض التفاصيل</small>
+                            <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8.996"
+                                    viewBox="0 0 14 8.996">
+                                    <path id="Path_382" data-name="Path 382"
+                                        d="M741.909,1491.729a1,1,0,0,1-1.413-.05l-3.231-3.5a1.006,1.006,0,0,1,0-1.36l3.231-3.5a1,1,0,0,1,1.47,1.36l-1.682,1.82H750a1,1,0,1,1,0,2h-9.716l1.682,1.82A1,1,0,0,1,741.909,1491.729Z"
+                                        transform="translate(-737 -1483.002)" fill="#3ec4b5" fill-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+
+<script>
+    AOS.init();
+
+    var loader = document.getElementById('div');
+    function myFunction() {
+        setInterval(function () {
+            loader.style.display = 'none';
+            $('.header').removeClass('index');
+        }, 1000);
+    }
+</script>
+
+</html>
