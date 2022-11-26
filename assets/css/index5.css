@@ -46,7 +46,7 @@
   }
 
   p {
-      /* padding-left: 35px; */
+     
       font-family: 'FFShamelFamily-SansOnebook';
       font-size: 14px;
       color: #392C23;
@@ -60,7 +60,7 @@
 
   .divabsolute {
       position: absolute;
-      top: 39%;
+      top: 29%;
       left: 37%;
   }
 

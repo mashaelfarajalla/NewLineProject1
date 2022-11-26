@@ -17,20 +17,180 @@ body {
 }
 
 /*Header Start*/
+@media screen and (min-width: 992px) {
+    header {
+        width: 93%;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        width: 100%;
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+        background: #FAFAFA;
+        padding: 0 40px;
+    }
+
+    nav ul li,
+    nav ul li a {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    label.logo {
+        font-size: 35px;
+        font-weight: bold;
+        /* padding: 0 100px; */
+        line-height: 80px;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        float: right;
+        margin-right: 40px;
+        height: 100vh;
+        background: #FAFAFA;
+        top: 80px;
+        left: 0px;
+        text-align: center;
+        display: none;
+        transition: all .5s;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    nav li {
+        display: block;
+        margin: 25px 0px;
+        line-height: 30px;
+    }
+
+    nav a {
+        color: #392C23;
+        font-size: 20px;
+    }
+
+    a.active,
+    a:hover {
+        color: #3EC4B5;
+    }
+
+    nav #icon {
+        font-size: 30px;
+        line-height: 80px;
+        float: left;
+        /* margin-right: 40px; */
+        cursor: pointer;
+    }
+
+    nav label img {
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    header {
+        width: 100%;
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+        background: #FAFAFA;
+        padding: 0 40px;
+        justify-content: space-between;
+    }
+
+    nav ul li,
+    nav ul li a {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    label.logo {
+        font-size: 35px;
+        font-weight: bold;
+        /* padding: 0 100px; */
+        line-height: 80px;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        float: right;
+        margin-right: 40px;
+        height: 100vh;
+        background: #FAFAFA;
+        top: 80px;
+        left: 0px;
+        text-align: center;
+        display: none;
+        transition: all .5s;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    nav li {
+        display: block;
+        margin: 25px 0px;
+        line-height: 30px;
+    }
+
+    nav a {
+        color: #392C23;
+        font-size: 20px;
+    }
+
+    a.active,
+    a:hover {
+        color: #3EC4B5;
+    }
+
+    nav #icon {
+        font-size: 30px;
+        line-height: 80px;
+        float: left;
+        /* margin-right: 40px; */
+        cursor: pointer;
+    }
+
+    nav label img {
+        width: 60px;
+    }
+}
+
+
 header {
-    display: flex;
     position: fixed;
-    width: 93%;
     left: 0;
     top: 0;
     background: linear-gradient(to bottom, #F1F1F1 0%, #F8F8F8 100%);
-    z-index: var(--z-fixed);
+    z-index: 1;
     height: 90px;
     align-items: center;
+    transition: .5s;
 }
 
 .image {
-    margin-top: 100px;
+    margin-top: 60px;
+    width: 0;
+    height: 141px;
 }
 
 header div svg path {
@@ -44,30 +204,94 @@ header div a {
 
 /*Header End*/
 
+
 /* NavSlider Start*/
+@media screen and (min-width: 992px) {
+    .slider {
+        width: 6%;
+        top: 0;
+        right: 0;
+        height: 100vh;
+    }
+
+
+    .slider ul li {
+        width: 100%;
+        height: 90px;
+    }
+
+
+    .nav-pills .nav-link {
+        border-bottom: 1px dashed #D6D6D6;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 767px)and (min-width: 0px) {
+    .slider {
+        height: 10vh;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .slider ul {
+        width: 100%;
+    }
+
+    .slider ul li {
+        width: 25%;
+        height: 10vh;
+    }
+
+    .nav-pills .nav-link {
+        border-left: 1px dashed #D6D6D6;
+        height: 10vh;
+    }
+
+    .slider .none {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .slider {
+        height: 10vh;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .slider ul {
+        width: 100%;
+    }
+
+    .slider ul li {
+        width: 25%;
+        height: 10vh;
+    }
+
+    .nav-pills .nav-link {
+        border-left: 1px dashed #D6D6D6;
+        height: 10vh;
+    }
+
+    .slider .none {
+        display: none;
+    }
+}
+
 .slider {
-    position: absolute;
-    width: 6%;
-    top: 0;
-    right: 0;
-    height: 100vh;
+    position: fixed;
     background-color: #FAFAFA;
     z-index: var(--z-fixed);
+    transition: .5s;
 }
 
 .slider ul {
     padding: 0;
 }
 
-.slider ul li {
-    width: 100%;
-    height: 90px;
-}
 
-.nav-pills .nav-link {
-    border-bottom: 1px dashed #D6D6D6;
-    height: 90px;
-}
+
 
 .slider ul li a {
     display: flex;
@@ -105,19 +329,53 @@ li:hover {
     font-size: 12px;
 }
 
+.text .span {
+    color: #CF2A45;
+}
+
 .square {
+    display: flex;
     margin-bottom: 6px;
     text-align: center;
     height: 25px;
     width: 25px;
     background-color: #3EC4B5;
+    align-items: center;
+    justify-content: center;
 }
+
+
+
 
 
 
 /* NavSlider End*/
 
 /* Links Start*/
+
+@media screen and (max-width: 767px) {
+    .fot {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    @media (min-width: 768px) {
+
+        .container,
+        .container-md,
+        .container-sm {
+            max-width: 764px;
+        }
+    }
+
+
+
+    .fot {
+        display: none;
+    }
+}
 
 .fot {
     position: fixed;
@@ -128,7 +386,7 @@ li:hover {
     background-color: #FFFFFF;
     padding: 0rem 0rem 0 0;
     transition: .5s;
-    z-index: var(--z-fixed);
+    z-index: 1;
 
 }
 
@@ -138,7 +396,7 @@ li:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .fotdiv {
@@ -188,6 +446,49 @@ li:hover {
 
 
 /* section1 start */
+
+
+@media screen and (min-width: 992px) {
+    .section {
+        width: 93%;
+        top: 90px;
+        align-items: center;
+        height: calc(100vh - 145px);
+    }
+
+    .bg2 {
+        margin-top: 36px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .section {
+        width: 100%;
+        top: 80px;
+        padding: 20px;
+        height: calc(100vh - 145px);
+    }
+
+    .mtcol12 {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 100%;
+        top: 80px;
+        padding: 20px;
+        height: calc(100vh - 180px);
+    }
+
+    .mtcol12 {
+        margin-top: 70px;
+    }
+}
+
+
 .bg {
     background: url(./../image/Group.png);
     background-size: cover;
@@ -195,44 +496,37 @@ li:hover {
 }
 
 .section {
+    overflow-y: auto;
     display: flex;
     position: fixed;
     left: 0;
-    width: 93%;
-    top: 90px;
-    height: calc(100vh - 5rem);
-    align-items: center;
 }
-
-
 
 .section div .carousel-caption span svg path {
     fill: white;
 }
 
-div.carousel-caption {
+.container1 div.carousel-caption {
     top: 0;
     position: absolute;
     width: 100%;
     right: 0%;
     text-align: right;
-    background: #12100e78;
+    background: #12100e2e;
     z-index: 1;
-    /* padding: 119px 46px 55px 158px; */
-    /* padding: 18vh 4vh 0vh 15vh; */
     bottom: 0rem;
     left: 0%;
-    padding: 84px 30px 0 64px;
+    padding: 53px 30px 0 64px;
 }
 
-.section div .carousel-caption p {
+.container1.section div .carousel-caption p {
     font-family: FFShamelFamily-SansOneBook;
     font-size: 18px;
     color: white;
 }
 
-.section div .carousel-caption span {
-    font-family: FFShamelFamily-SansOneBook;
+.container1.section div .carousel-caption span {
+    font-family: 'FFShamelFamily-SansOneBook';
     font-size: 14px;
     display: block;
     color: white;
@@ -258,8 +552,8 @@ div.carousel-dark .carousel-indicators .active {
 }
 
 .line {
-    height: 45px;
-    width: 3px;
+    height: 67px;
+    width: 1px;
     background: #ffffff;
 }
 
@@ -282,7 +576,7 @@ div span a {
 }
 
 .Ddiv {
-    padding: 17px 17px 17px 24px;
+    padding: 24px 17px 22px 24px;
     background: white;
 }
 
@@ -310,11 +604,10 @@ div span a {
 }
 
 .bg2 {
-    margin-top: 26px;
     display: flex;
     background-image: url(../image/Image\ 5.png);
     background-repeat: no-repeat;
-    height: 271px;
+    height: 289px;
     justify-content: center;
     align-items: center;
 }
@@ -325,18 +618,21 @@ div span a {
     font-size: 20px;
 }
 
-.section .p {
+.container1 .section .p {
     color: #392C23;
     font-family: 'FFShamelFamily-SansOneBook';
     font-size: 18px;
 }
 
-.section button {
+.container1.section button,
+.container3.section button {
+    border: 1px solid;
     background-color: #CF2A45;
     color: white;
-    font-size: 18px;
-    width: 135px;
+    font-size: 15px;
+    width: 124px;
     height: 47px;
+    border-radius: 13px
 }
 
 .section button svg path {
@@ -346,7 +642,8 @@ div span a {
 
 /* section1 start */
 
-/* Container2 Start*/
+/* section2 Start*/
+
 
 .circle {
     height: 50px;
@@ -360,14 +657,48 @@ div span a {
 }
 
 .divmagright p {
-    margin-right: 4vh;
+    margin-right: 40px;
 }
 
 /* section2 End*/
 
 /* Container1 End*/
 
+
+
 /* Container2 start*/
+
+@media screen and (min-width: 992px) {
+    .container2 p.p {
+        padding-left: 157px;
+    }
+
+    .imagephone {
+        height: 660px;
+    }
+}
+
+@media screen and (max-width: 767px)and (min-width: 0px) {
+    .container2 p.p {
+        padding-left: 57px;
+    }
+
+    .noneimg {
+        display: none;
+    }
+
+    .imagephone {
+        height: 617px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container2 p.p {
+        padding-left: 57px;
+    }
+}
+
+
 
 .circle2 {
     height: 56px;
@@ -410,9 +741,691 @@ div span a {
 }
 
 .img img {
-    width: 30%;
+    width: 23%;
 }
 
-.imagephone {
-    height: 660px;
+
+
+/* Container2 End*/
+
+/* Container3 start*/
+
+@media screen and (min-width: 992px) {
+
+    .dropZoneOverlay,
+    .FileUpload {
+        width: 686px;
+        height: 100px;
+    }
 }
+
+@media screen and (max-width: 767px)and (min-width: 0px) {
+
+    .dropZoneOverlay,
+    .FileUpload {
+        width: 313px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .dropZoneOverlay,
+    .FileUpload {
+        width: 740px;
+        height: 100px;
+    }
+}
+
+
+
+.container3 .div p {
+    color: #707070;
+    font-size: 14;
+    font-family: 'FFShamelFamily-SansOneBook';
+}
+
+.container3 p span {
+    color: #392C23;
+    font-size: 14;
+    font-family: 'FFShamelFamily-SansOneBook';
+}
+
+.circle3 {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #392C23;
+    margin: 0 4px;
+
+}
+
+.circle3:hover {
+    background-color: #CF2A45;
+    border: 1px solid transparent;
+}
+
+.circle3:hover svg path {
+    fill: #FFFFFF;
+}
+
+.circle3:hover svg #Path_6917 {
+    fill: #CF2A45;
+}
+
+.form-control {
+    padding: 12px 15px;
+    border-radius: 13px;
+}
+
+.form-select {
+    padding: 12px 15px;
+    border-radius: 13px;
+    background-position: left 0.75rem center;
+}
+
+form label {
+    font-size: 14px;
+    font-family: 'FFShamelFamily-SansOnebook';
+    color: #392C23;
+}
+
+form label span {
+    font-size: 14px;
+    font-family: 'FFShamelFamily-SansOnebook';
+    color: #C8C8C8;
+}
+
+form {
+    position: relative;
+}
+
+input::placeholder,
+.form-select {
+    font-size: 14px;
+    font-family: 'FFShamelFamily-SansOnebook';
+
+    color: #C8C8C8 !important;
+    background-color: white;
+}
+
+.dropZoneContainer {
+    cursor: pointer;
+    position: relative;
+}
+
+
+.dropZoneOverlay {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #E2E2E2;
+    border-radius: 13px;
+    font-family: 'FFShamelFamily-SansOneBook';
+    font-size: 14px;
+    color: #C8C8C8;
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    background-color: white;
+}
+
+.dropZoneOverlay p span {
+    font-family: 'FFShamelFamily-SansOneBold';
+    color: #CF2A45;
+    font-size: 14px;
+}
+
+.FileUpload {
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+textarea.form-control {
+    font-size: 14px;
+    font-family: 'FFShamelFamily-SansOneBook';
+    color: #848484;
+    min-height: 100px;
+}
+
+div .send {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    left: 0;
+}
+
+input[type=submit] {
+    width: 46px;
+    background-color: #3EC4B5;
+}
+
+.container3 .fa-solid,
+.container3 .fas {
+    right: 17px;
+    position: absolute;
+    bottom: 15px;
+    color: white;
+}
+
+/* Container3 End*/
+
+
+/* Container4 Start*/
+.circle4 {
+    height: 56px;
+    width: 56px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    border: 1px solid #392C23;
+    margin: 0 4px;
+}
+
+.container4 input[type=text] {
+    border: none;
+    border-bottom: 1px solid #392C23;
+    background-color: transparent;
+}
+
+.container4 .fa-magnifying-glass:before,
+.container4 .fa-search:before {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+}
+
+.container4 .relative {
+    position: relative;
+}
+
+.tabcontent {
+    display: none;
+    background-color: #fff;
+}
+
+.tabcontent .active {
+    display: block;
+    display: show;
+}
+
+.tabcontent p {
+    font-size: 16px;
+    font-family: 'FFShamelFamily-SansOneBold';
+    /* background-color: white; */
+    padding-top: 18px;
+    color: #392C23;
+}
+
+.background {
+    background-color: #3EC4B5;
+}
+
+.background p {
+    color: white;
+}
+
+.pagenumber {
+    background-color: white;
+}
+
+a.pagenumber:hover,
+.multiTabs a.active {
+    background-color: #3EC4B5;
+    color: white;
+}
+
+.float-left {
+    position: absolute;
+    right: 40%;
+}
+
+.float-right {
+    position: absolute;
+    left: 40%;
+}
+
+ol li {
+    font-size: 16px;
+    color: #707070;
+    font-family: 'FFShamelFamily-SansOneBook';
+}
+
+/* Container4 End*/
+
+
+
+
+
+/* Container5 Start*/
+
+@media screen and (min-width: 992px) {
+
+    .section2 {
+        width: 93%;
+        top: 90px;
+        height: calc(100vh - 145px);
+    }
+
+    .divabsolute {
+        top: 29%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section2 {
+        width: 100%;
+        top: 80px;
+        height: calc(100vh - 180px);
+    }
+
+    .divabsolute {
+        top: 27%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .section2 {
+        width: 100%;
+        top: 80px;
+        height: calc(100vh - 180px);
+    }
+
+    .divabsolute {
+        top: 27%;
+    }
+}
+
+
+.section2 {
+    position: fixed;
+    left: 0;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.card {
+    padding: 15px;
+}
+
+h3 {
+    color: #CF2A45;
+    font-size: 20px;
+    font-family: 'FFShamelFamily-SansOneBold';
+}
+
+div h5 {
+    font-family: 'FFShamelFamily-SansOneBold';
+    font-size: 16px;
+    color: #392C23;
+}
+
+.container5 p {
+
+    font-family: 'FFShamelFamily-SansOnebook';
+    font-size: 14px;
+    color: #392C23;
+}
+
+small {
+    font-family: 'FFShamelFamily-SansOnebook';
+    font-size: 14px;
+    color: #392C23;
+}
+
+.divabsolute {
+    position: absolute;
+    left: 37%;
+}
+
+.circle5 {
+    height: 30px;
+    width: 30px;
+    background-color: #F3F2F2;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-cols-md-3>.col {
+    padding: 0 9px;
+}
+
+/* Container5 End*/
+
+
+
+
+/* Container6 Strat*/
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container6 .card-body {
+        padding: 1rem 0rem;
+    }
+}
+
+.container6 ul li a {
+    color: #392C23;
+    font-size: 16px;
+    font-family: 'FFShamelFamily-SansOneBook';
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.container6 .divborder {
+    margin-top: 40px;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+/* Container6 End*/
+
+
+
+
+/* Container7 Strat*/
+@media screen and (min-width: 992px) {}
+
+@media screen and (max-width: 767px) {
+    .container7 .card-body {
+        padding: 1rem 0rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+.container7 .col-6 p {
+    padding-left: 66px;
+    font-size: 16px;
+    font-family: 'FFShamelFamily-SansOneBook';
+    color: #392C23;
+}
+
+
+.square2 {
+    width: 80px;
+    height: 80px;
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D6D6D6;
+    border-radius: 10%;
+}
+
+.hoverDiv:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #7fd9cf 0%, #aeeae4 0%, #46c7b8 100%);
+}
+
+.hoverDiv:hover .card-body h5 {
+    color: white;
+}
+
+.hoverDiv:hover .card-body p {
+    color: white;
+}
+
+small {
+    --bs-text-opacity: 1;
+    color: #6c757d;
+}
+
+.hoverDiv:hover .card-body div small {
+    color: white;
+}
+
+/* Container7 End*/
+
+
+/* Container8 Start*/
+
+.calendar {
+    font-family: 'IBM Plex Sans', sans-serif;
+    position: relative;
+    max-width: 400px;
+    /*change as per your design need */
+    min-width: 320px;
+    background: var(--calendar-bg-color);
+    color: var(--calendar-font-color);
+    margin: 20px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-weight: normal;
+    border-radius: var(--calendar-border-radius);
+}
+
+.calendar-inner {
+    padding: 10px 10px;
+}
+
+.calendar .calendar-inner .calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.calendar .calendar-inner .calendar-body div {
+    padding: 4px;
+    min-height: 30px;
+    line-height: 30px;
+    border: 1px solid transparent;
+    margin: 10px 2px 0px;
+}
+
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7) {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--weekdays-border-bottom-color);
+}
+
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7):hover {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--weekdays-border-bottom-color);
+}
+
+.calendar .calendar-inner .calendar-body div>a {
+    color: var(--calendar-font-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.calendar .calendar-inner .calendar-body div:hover {
+    border: 1px solid var(--calendar-date-hover-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body div.empty-dates:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.calendar .calendar-inner .calendar-today-date {
+    display: grid;
+    text-align: center;
+    cursor: pointer;
+    margin: 3px 0px;
+    background: var(--calendar-current-date-color);
+    padding: 8px 0px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month {
+    display: flex;
+    min-width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next {
+    text-align: right;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-year-label,
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-month-label {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today {
+    background: var(--calendar-today-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today a {
+    outline: 2px solid var(--calendar-today-innerborder-color);
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a,
+.calendar .calendar-inner .calendar-controls .calendar-prev a {
+    color: var(--calendar-font-color);
+    font-family: arial, consolas, sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 4px 12px;
+    display: inline-block;
+    background: var(--calendar-nextprev-bg-color);
+    margin: 10px 0 10px 0;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg {
+    height: 20px;
+    width: 20px;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg path,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg path {
+    fill: var(--next-prev-arrow-color);
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates,
+.calendar .calendar-inner .calendar-body .next-dates {
+    color: var(--calendar-prevnext-date-color);
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates:hover,
+.calendar .calendar-inner .calendar-body .next-dates:hover {
+    border: 1px solid transparent;
+    pointer-events: none;
+}
+
+.owl-stage {
+    transform: translate3d(-0, 0px, 0px);
+}
+
+.card-wrapper {
+    display: flex;
+}
+
+.card-wrapper div {
+    margin: 0 1em;
+}
+
+.card-wrapper div:first-child {
+    margin-right: 0;
+}
+
+.card-wrapper div:last-child {
+    margin-left: 0;
+}
+
+.card-wrapper div.carousel-caption {
+    right: -4%;
+    border-radius: 3%;
+}
+
+.container8 div.carousel-caption {
+    top: 0;
+    position: absolute;
+    width: 100%;
+
+    text-align: right;
+    background: #12100e2e;
+    z-index: 1;
+    bottom: 0rem;
+    left: 0%;
+    padding: 135px 30px 0 64px;
+}
+
+.container8.carousel-control-next {
+    left: 0;
+}
+
+
+
+.card-wrapper .col {
+    position: relative;
+
+}
+
+.card-wrapper img {
+    border-radius: 3%;
+}
+
+.card-wrapper img.img-fluid {
+    min-height: 287px;
+}
+
+.card-wrapper h4 {
+    font-size: 16px;
+    font-family: 'FFShamelFamily-SansOneBold';
+
+}
+
+.container8.card-wrapper p {
+    font-size: 12px;
+    font-family: 'FFShamelFamily-SansOneBook';
+    color: white;
+}
+
+
+/* Container8 end*/
+
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1420px;
+    }
+}
+
+/* @media (min-width: 768px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 928px;
+    }
+} */

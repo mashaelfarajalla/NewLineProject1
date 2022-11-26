@@ -85,6 +85,8 @@ input[type=text] {
     color: white;
 }
 
+
+
 a.pagenumber:hover,
 .multiTabs a.active {
     background-color: #3EC4B5;
